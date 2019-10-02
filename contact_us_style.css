@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+        font-family: 'Poppins' ,sans-serif;
+        background: #593845;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.brand_name,.nav_links,.social_icons {
+    display: flex;
+}
+.brand_name{
+    flex: 2;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.brand {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav {
+    flex: 1.5;
+}
+.nav_links {
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav_link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.social_icons {
+    flex: 2;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.icons {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.image-1 {
+    position: absolute;
+    width: 255px;
+    height: 234;
+    bottom: 0vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+.image-2{
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+    width: 397px;
+    height: 382.5px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+.image-3 {
+    position: absolute;
+    width: 497px;
+    opacity: 0.5;
+    height: 482.5px;
+    top:13px;
+    left: 22%;
+    z-index: -1;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    height: 90vh;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+}
+.head_text {
+    margin-top: 10vh;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: drop 1.5s ease;
+}
+.subheading {
+    display: flex;
+    justify-content: center;
+}
+.sub_text{
+    color: white;
+    font-size: 16px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    animation: drop 1.5s ease;
+}
+.input_forms {
+    width: 80%;
+    height: 10vh;
+    margin:5% auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    animation: drop_1 1.5s ease;
+
+}
+.forms {
+    color: white;
+    font-size: 14px;
+}
+.name_input {
+    padding: 7px 20px;
+    width: 20rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+    color: white;
+}
+.message_input_container {
+    align-items: flex-start;
+    width: 80%;
+    margin: 5% auto auto auto;
+    display: flex;
+    justify-content: center;
+    animation: drop_1 1.5s ease;
+}
+.message_input_form {
+    color: white;
+}
+.message_input{
+    padding: 7px 20px;
+    width: 49rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+    color: white;
+}
+.cta {
+    width: 80%;
+    margin: 5% auto auto auto ;
+    display: flex;
+    justify-content: center;
+    animation: drop_2 1.5s ease;
+}
+button { 
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translatey(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes drop_1{
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes drop_2{
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

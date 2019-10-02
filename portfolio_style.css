@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+    overflow-y: scroll;
+}
+body {
+        font-family: 'Poppins' ,sans-serif;
+        background: #593845;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.brand_name,.nav_links,.social_icons {
+    display: flex;
+}
+.brand_name{
+    flex: 2;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.brand {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+nav {
+    flex: 1.5;
+}
+.nav_links {
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav_link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.social_icons {
+    flex: 2;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.icons {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.heading_container{
+    margin-top: 50px;
+    width: 90;
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    font-size: 33px;
+    color: white;   
+    font-weight: 200;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    animation: drop 1.5s ease; 
+}
+.gallery_container{
+    margin-top: 5rem;
+    
+}
+.image-1 {
+    position: absolute;
+    width: 255px;
+    height: 234;
+    bottom: 0vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+.image-2{
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+    width: 397px;
+    height: 382.5px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+.image-3 {
+    position: absolute;
+    width: 497px;
+    opacity: 0.5;
+    height: 482.5px;
+    top:13px;
+    left: 22%;
+    z-index: -1;
+}
+.grid {
+    background: #593845;
+    width: 80%;
+    margin: auto;
+  }
+
+  /* clear fix */
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+  
+}
+.grid-item {
+    float: left;
+    
+  }
+  
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+    animation: drop 1.5s ease; 
+  }
+  
+  @keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translatey(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

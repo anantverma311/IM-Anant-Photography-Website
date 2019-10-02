@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins',  sans-serif;
+    background: #593845;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+.brand_name,.nav_links,.social_icons {
+    display: flex;
+}
+.brand_name{
+    flex: 2;
+}
+.brand {
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav {
+    flex: 1.5;
+}
+.nav_links{
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav_link {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.social_icons {
+    flex: 2;
+    justify-content: flex-end;
+}
+.icons {
+    margin-left: 20px;
+    width:22px;
+    height: 22px;
+}
+.image-1 {
+    position: absolute;
+    width: 255px;
+    height: 234;
+    bottom: 0vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+.image-2{
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+    width: 397px;
+    height: 382.5px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+.image-3 {
+    position: absolute;
+    width: 497px;
+    opacity: 0.5;
+    height: 482.5px;
+    top:13px;
+    left: 22%;
+    z-index: -1;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+    animation: drop_1 1.5s ease;
+}
+.cover {
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+.profile_image {
+    height: 100%;
+    animation: drop 1.5s ease;
+}
+.heading {
+    font-size: 44px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 3.5rem;
+}
+.heading img{
+    width: 20rem;
+}
+.para {
+    font-size: 15px;
+    color:white;
+    font-weight: 300;
+    width: 80%;
+    margin-top: 1.5em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.para_1 {
+    font-size: 15px;
+    color:white;
+    font-weight: 300;
+    width: 80%;
+    margin-top: 5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.para_2 {
+    font-size: 15px;
+    color:white;
+    margin-top: 5px;
+    font-weight: 300;
+    width: 80%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translatey(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes drop_1{
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
